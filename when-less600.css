@@ -1,0 +1,385 @@
+* , *::after, *::before{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: gainsboro;
+}
+    /* Header CSS */
+header{
+  background-color: gainsboro;
+  position: relative;
+  color:white;
+}
+.imag-and-title{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px 0 0 0;  /*espace mn lfoq d tswira wl h1 */
+  }
+.imag-and-title img{
+width: 10%;
+border-radius: 50%;
+border: 1px solid black;
+ margin: 0 10px 0 0;  /*espace mabin tswira wl h1 */
+}
+.imag-and-title h1{
+    font-size: 25px;
+}
+ 
+.Links{
+  margin-top: 20px;
+  padding: 6px ;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Links li a{
+  color: white;
+}
+.Links li a{
+  padding: 5px;
+}
+.Links li a:hover{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* ANimation of h1 and img */
+
+.imag-and-title img{
+  animation: ImageAnimation 3s 1;
+}
+@keyframes ImageAnimation {
+  0%{
+    transform: translateX(-150px);
+    opacity: 0;
+  }   
+25%{
+  transform: translateX(-100px);
+  opacity: 0;
+}   
+50%{
+  transform: translateX(0);
+  opacity: 0.4;
+}  
+   
+75%{
+  transform: translateX(-30px);
+  opacity: 1;
+}    
+100%{
+  transform: translateX(0px);
+}    
+
+}
+.imag-and-title h1{
+  animation: titleAnimation 3s 1;
+}
+@keyframes titleAnimation {
+  0%{
+    transform: translateY(-50px);
+    opacity: 0;
+  }   
+  25%{
+    transform: translateX(-25);
+    opacity: 0.4;
+  }  
+     
+  50%{
+    transform: translateX(0);
+    opacity: 1;
+  }    
+  75%{
+    transform: translateX(-25px);
+  }   
+  100%{
+    transform: translateX(0px);
+  }   
+}
+
+/* MAIN PAGE */
+main{
+  width: 100%;
+  color: black;
+
+}
+.first-section {
+  margin-top: 40px;
+  text-align: center;
+  background-color: gainsboro;
+}
+.welcome-div {
+  text-align: center;
+}
+.welcome-div .h1 {
+  text-decoration: underline double;
+  letter-spacing: 2px;
+  line-height: 1.3em;
+  padding: 10px 0 25px 0;
+}
+
+.welcome-div p {
+  line-height: 1.5em;
+  letter-spacing: 1.2px;
+  text-align: center
+}
+.welcome-div p::first-letter {
+  font-size: 30px;
+  color: rgb(196, 172, 172);
+}
+.chess-hand {
+  margin: 15px 0 15px 0;
+  width: 45%;
+  height: auto;  
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /* khtar 'box shadow ' li bghiti mn had sit https://getcssscan.com/css-box-shadow-examples */
+}
+
+
+/* second section  */
+
+.second-section {
+  text-align: center;
+  background-color: gainsboro;
+}
+
+.list-Benifits h2{
+  padding: 25px 0 20px 0;
+}
+.centerUL{
+  text-align: center;
+}
+.list-Benifits{
+  display: inline-block;
+  text-align: justify;
+}
+.list-Benifits  li{
+  list-style-type:disc;
+  list-style-position: inside;
+  padding: 3px 0px 3px 0px;
+}
+
+
+.image2{
+  margin: 15px 0 15px 0;
+  width: 45%;
+  height: auto;  
+  border-radius: 5px;
+}
+
+
+
+ /* Players page  */
+ .main-players{
+  background-color: #ccc;
+  margin:  55px  0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+.main-players h1{
+
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  padding: 25px 0 25px 0;
+  text-decoration: underline;
+
+}
+.article{
+  background-color:#ccc;
+  margin: 15px 0px ;
+  opacity: 1;
+  color: white;
+ text-align: center;
+  border-radius: 5px;
+  animation: myAnim 1s ease 0s 1 normal forwards; 
+}
+@keyframes myAnim {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+.picture {
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  margin: 10px 0 10PX 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all 1s;
+}
+.picture:hover{
+  transform: scale(1.3);
+
+}
+.some-infos{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  line-height: 25px;
+  font-size: medium;
+  color: rgb(109, 71, 71);
+  font-weight: 700;
+}
+.name{
+  margin-bottom: 5px;
+  text-align: center;
+  color: #050505;
+  background-image: -webkit-linear-gradient(0deg, #050505 0%,#ee8162 58%,#ba7127 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ 
+/* history page  */
+.section-history{
+  margin: 30px 8px 15px 8px;
+  text-align: center;
+  background-color: gainsboro;
+}
+.title{
+  font-size: 15px;
+  padding: 25px 0 15px 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.content{
+  padding: 0 10px;
+}
+.content p{
+  text-align: justify;
+  line-height: 25px;
+  word-spacing: 9px;
+
+}
+.paragraph1-image{
+  width: 100%;
+  margin: 0 auto;
+}
+.paragraph1-image img{
+  width: 60%;
+  margin: 20px 0 20px 0;
+  border-radius: 10px;
+}
+
+.paragraph2-image img{
+  width: 60%;
+  margin: 20px 0 20px 0;
+  border-radius: 10px;
+}
+
+
+/* CONTACT PAGE  */
+
+
+
+.conatct-section{
+  margin:  55px  0;
+  color:#777;
+}
+.container {
+  margin: 0 20px;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none ;
+	margin: 0 0 10px;
+	width: 100%;
+	padding: 0;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+iframe{
+	width:100%;
+  padding: 0 30px;
+  height: 200px;
+}
